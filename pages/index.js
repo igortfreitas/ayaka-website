@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import Background from './Ayaka.jpg'
+import Background from '../Ayaka.jpg'
 export default function Home() {
   return (
     <div className={styles.container}>
