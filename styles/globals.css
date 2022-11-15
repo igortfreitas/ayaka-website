@@ -21,6 +21,7 @@ a {
   }
   body {
     color: white;
-    background: #363430
+    background-image: url('/Ayaka.jpg');
+    background-repeat: no-repeat;
   }
 }
