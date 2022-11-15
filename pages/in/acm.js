@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>AyakaMB DIscord Bot</title>
+        <title>AyakaMB Discord Bot</title>
         <meta name="description" content="A discord bot, made by rrryfoo#8618" />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
