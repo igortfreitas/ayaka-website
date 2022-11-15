@@ -36,7 +36,7 @@ export default function Home() {
       <div className={styles.acommand}>
         <p className={styles.commandName}>/avatar</p>
         <p className={styles.commandDescription}>
-          Shows a user&aposs avatar. (Can be yours/any specified user)
+          Shows a user&apos;s avatar. (Can be yours/any specified user)
         </p>
         <p>Usage:</p>
         <p className={styles.commandUsage}>/avatar</p>
@@ -71,7 +71,7 @@ export default function Home() {
       <div className={styles.acommand}>
         <p className={styles.commandName}>/ping</p>
         <p className={styles.commandDescription}>
-          Replies with bot&aposs latency.
+          Replies with the bot&apos;s latency.
         </p>
         <p>Usage:</p>
         <p className={styles.commandUsage}>/ping</p>
