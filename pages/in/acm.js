@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>AyakaMB DIscord Bot</title>
         <meta name="description" content="A discord bot, made by rrryfoo#8618" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
