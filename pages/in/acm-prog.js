@@ -26,6 +26,7 @@ export default function Home() {
         <p className={styles.commandDescription}>
           Sends all bot commands.
         </p>
+        <p>Usage:</p>
         <p className={styles.commandUsage}>/help</p>
         <p className={styles.commandOptionalUsage}>/help commandname: [command name]</p>
       </div>
