@@ -127,3 +127,15 @@
     filter: invert(1);
   }
 }
+.commandDescription {
+  font-size: smaller;
+}
+.commandName {
+  font-size: large;
+}
+.commandUsage, .commandOptionalUsage {
+  font-size: medium;
+}
+.acommand {
+  text-align: left;
+}

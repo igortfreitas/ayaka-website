@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './cmds.css'
+import styles from './Home.module.css'
 import Markdoc from '@markdoc/markdoc'; 
 
 export default function Home() {
