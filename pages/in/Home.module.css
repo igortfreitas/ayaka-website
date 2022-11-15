@@ -136,6 +136,9 @@
 .commandUsage, .commandOptionalUsage {
   font-size: medium;
 }
+.commandUsage, .commandName, .commandDescription, .commandOptionalUsage {
+  text-align: left;
+}
 .acommand {
   text-align: left;
 }
