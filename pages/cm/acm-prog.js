@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './Home.module.css'
 import Markdoc from '@markdoc/markdoc'; 
-import Background from '../../public/Ayaka.jpg'
+
 export default function Home() {
   
   return (
@@ -15,8 +15,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
- 
-
         <h1 className={styles.title}>
           All commands
         </h1>
