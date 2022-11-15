@@ -199,7 +199,7 @@ export default function Home() {
         <p className={styles.commandUsage}>/sus</p>
       </div>
       <div className={styles.acommand}>
-        <p className={styles.commandName}>/ayakavoiceline/p>
+        <p className={styles.commandName}>/ayakavoiceline</p>
         <p className={styles.commandDescription}>
           sends a random Ayaka voiceline (ayaka my beloved)
         </p>
