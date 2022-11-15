@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import gbStyles from '../styles/globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import Background from '../public/Ayaka.jpg'
@@ -36,13 +37,7 @@ export default function Home() {
            </div>
           </Link>
         </div>
-        <div style={{
-            zIndex: -1,
-            position: 'fixed',
-            width: '100vw',
-            height: '100vh',
-            filter: 'brightness(0.3)'
-        }}>
+        <div id={styles.bim}>
             <Image 
                 src={Background} 
                 alt="Ayaka" 
