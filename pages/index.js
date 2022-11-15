@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
       <div style={{
             zIndex: -1,
-            position: 'fixed',
+            position: 'center',
             width: '100vw',
             height: '100vh',
             filter: 'brightness(0.3)'
