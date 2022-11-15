@@ -20,10 +20,10 @@ export default function Home() {
         You may now close this page.
         </p>
         <div className={styles.grid}>
-          <a href="./acm" className={styles.card}>
+          <Link href="./acm" className={styles.card}>
             <h2>Command list &rarr;</h2>
             <p>List of commands for AyakaMB</p>
-          </a>
+          </Link>
         </div>
       </main>
     </div>
