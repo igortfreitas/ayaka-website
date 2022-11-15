@@ -83,14 +83,14 @@
   border-radius: 7px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
-  opacity: 30%
+  opacity: 30%;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #f7f4f2;
+  border-color: #f7f4f2;
   opacity: 20%
 }
 
