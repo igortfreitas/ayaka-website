@@ -1,12 +1,24 @@
 .container {
   padding: 0 2rem;
 }
+  .main::before {    
+      content: "";
+          background-image: url('../public/Ayaka.jpg');
+              background-size: cover;
+                  background-attachment: fixed;
+                      background-position: center;
+                          position: absolute;
+                              top: 0px;
+                                  right: 0px;
+                                      bottom: 0px;
+                                          left: 0px;
+                                              opacity: 60%;
+                                                    }
 #bim {
             zIndex: -1;
             position: 'fixed';
             width: '100vw';
             height: '100vh';
-            
 }
 
 .main {
