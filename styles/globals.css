@@ -23,3 +23,10 @@ a {
     color: white;
   }
 }
+#bim {
+            zIndex: -1,
+            position: 'fixed',
+            width: '100vw',
+            height: '100vh',
+            filter: 'brightness(0.3)'
+}
