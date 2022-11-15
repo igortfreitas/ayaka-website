@@ -35,7 +35,7 @@ export default function Home() {
         You may now close this page.
         </p>
         <div className={styles.grid}>
-          <Link href="./acm" className={styles.card}>
+          <Link href="../commands" className={styles.card}>
             <h2>Command list &rarr;</h2>
             <p>List of commands for AyakaMB</p>
           </Link>
