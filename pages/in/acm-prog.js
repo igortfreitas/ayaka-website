@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './Home.module.css'
+import styles from './cmds.css'
 import Markdoc from '@markdoc/markdoc'; 
 
 export default function Home() {
@@ -21,6 +21,14 @@ export default function Home() {
       <p className={styles.description}>
         commands for the Ayaka bot
       </p>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/help</p>
+        <p className={styles.commandDescription}>
+          Sends all bot commands.
+        </p>
+        <p className={styles.commandUsage}>/help</p>
+        <p className={styles.commandOptionalUsage}>/help commandname: [command name]</p>
+      </div>
       </main>
     </div>
   )
