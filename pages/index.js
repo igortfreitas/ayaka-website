@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           </Link>
 
-          <Link href="./in/acm" className={styles.card}>
+          <Link href="./commands" className={styles.card}>
            <div className={styles.cardText}> 
             <h2>Commands list &rarr;</h2>
             <p>A list of all commands</p>
