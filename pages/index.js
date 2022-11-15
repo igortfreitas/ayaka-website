@@ -36,7 +36,13 @@ export default function Home() {
            </div>
           </Link>
         </div>
-        <div id={styles.bim}>
+        <div style={{
+            zIndex: -1,
+            position: 'fixed',
+            width: '100vw',
+            height: '100vh',
+            filter: 'brightness(0.3)'
+        }}>
             <Image 
                 src={Background} 
                 alt="Ayaka" 
