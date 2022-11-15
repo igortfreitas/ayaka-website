@@ -131,7 +131,7 @@
   font-size: smaller;
 }
 .commandName {
-  font-size: 1rem;
+  font-size: 3rem;
 }
 .commandUsage, .commandOptionalUsage {
   font-size: medium;
