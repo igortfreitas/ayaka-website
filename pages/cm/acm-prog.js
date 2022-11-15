@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './Home.module.css'
 import Markdoc from '@markdoc/markdoc'; 
-import Background from '../public/Ayaka.jpg'
+import Background from '.../public/Ayaka.jpg'
 export default function Home() {
   
   return (
