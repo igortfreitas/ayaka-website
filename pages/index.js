@@ -49,7 +49,7 @@ export default function Home() {
                 layout="fill" 
                 objectFit="cover" 
                 objectPosition='center'
-            ></div>
+            ></Image></div>
       </main>
     </div>
   )
