@@ -123,9 +123,35 @@ export default function Home() {
         <p className={styles.commandOptionalUsage}>/how sus user: [User ID/Tag]</p>
       </div>
       <div className={styles.acommand}>
+        <p className={styles.commandName}>/how horny</p>
+        <p className={styles.commandDescription}>
+          not giving this command a description...
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/how horny</p>
+        <p className={styles.commandOptionalUsage}>/how horny user: [User ID/Tag]</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/how skillissue</p>
+        <p className={styles.commandDescription}>
+          Massive skill issue
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/how skillissue</p>
+        <p className={styles.commandOptionalUsage}>/how skillissue user: [User ID/Tag]</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/skillissuegif</p>
+        <p className={styles.commandDescription}>
+          When someone has skill issues 
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/skillissuegif</p>
+      </div>
+      <div className={styles.acommand}>
         <p className={styles.commandName}>/say</p>
         <p className={styles.commandDescription}>
-          Sends all bot commands.
+          Responds with given text
         </p>
         <p>Usage:</p>
         <p className={styles.commandOptionalUsage}>/say text: [Text to repeat]</p>
@@ -155,6 +181,38 @@ export default function Home() {
         </p>
         <p>Usage:</p>
         <p className={styles.commandUsage}>/deletemark</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/randomip</p>
+        <p className={styles.commandDescription}>
+          Generates an IP Address. (GL if someone gets your actual IP Address)
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/randomip</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/sus</p>
+        <p className={styles.commandDescription}>
+          Sussy bkaka
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/sus</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/ayakavoiceline/p>
+        <p className={styles.commandDescription}>
+          sends a random Ayaka voiceline (ayaka my beloved)
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/ayakavoiceline</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/hutaovoiceline</p>
+        <p className={styles.commandDescription}>
+          sends a random Hu Tao voiceline
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/hutaovoiceline</p>
       </div>
       </main>
     </div>
