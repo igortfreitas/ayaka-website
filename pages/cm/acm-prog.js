@@ -15,6 +15,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <div style={{
+            zIndex: -1,
+            position: 'fixed',
+            width: '100vw',
+            height: '100vh',
+            filter: 'brightness(0.3)'
+        }}>
+            <Image 
+                src={Background} 
+                alt="Ayaka" 
+                layout="fill" 
+                objectFit="cover" 
+                objectPosition='center'
+            ></Image></div>
         <h1 className={styles.title}>
           All commands
         </h1>
@@ -156,20 +170,6 @@ export default function Home() {
         <p>Usage:</p>
         <p className={styles.commandUsage}>/deletemark</p>
       </div>
-      <div style={{
-            zIndex: -1,
-            position: 'fixed',
-            width: '100vw',
-            height: '100vh',
-            filter: 'brightness(0.3)'
-        }}>
-            <Image 
-                src={Background} 
-                alt="Ayaka" 
-                layout="fill" 
-                objectFit="cover" 
-                objectPosition='center'
-            ></Image></div>
       </main>
     </div>
   )
