@@ -23,5 +23,6 @@ a {
     color: white;
     background-image: url('/Ayaka.jpg');
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
