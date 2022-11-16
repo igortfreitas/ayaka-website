@@ -9,7 +9,8 @@ export default function Custom404() {
       <Head>
         <title>AyakaMB</title>
         <meta name="description" content="A discord bot, made by rrryfoo#8618" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#5284d9" />
+        <link rel="shortcut icon" href="../public/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

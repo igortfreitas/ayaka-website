@@ -1,15 +1,16 @@
 import Head from 'next/head'
 import styles from './Home.module.css'
 import Link from 'next/link'
+import { FaAngleUp } from "react-icons/fa"
 export default function Home() {
-  
   return (
     
     <div className={styles.container}>
       <Head>
         <title>AyakaMB Discord Bot</title>
         <meta name="description" content="A discord bot, made by rrryfoo#8618" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="../../public/favicon.ico" />
+        <meta name="theme-color" content="#5284d9" />
       </Head>
 
       <main className={styles.main}>
@@ -84,7 +85,7 @@ export default function Home() {
         <p className={styles.commandOptionalUsage}>/unban userid: [ID of banned user to be unbanned]</p>
       </div>
       <h1 className={styles.title}>
-        Fun/funny commands
+        Fun
       </h1>
       <div className={styles.acommand}>
         <p className={styles.commandName}>/deadchat</p>

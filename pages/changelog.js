@@ -10,6 +10,7 @@ export default function Home() {
         <title>AyakaMB</title>
         <meta name="description" content="A discord bot, made by rrryfoo#8618" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#5284d9" />
       </Head>
 
       <main className={styles.main}>
