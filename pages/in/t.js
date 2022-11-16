@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '/styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import Link from 'next/link'
 import Background from '../../public/Ayaka.jpg'
 export default function Home() {
@@ -22,11 +22,11 @@ export default function Home() {
         </p>
         <div className={styles.grid}>
           <Link href="../commands" className={styles.card}>
-            <h2>Command list &rarr;</h2>
-            <p>List of commands for AyakaMB</p>
+            <h2>Commands &rarr;</h2>
+            <p>A list of all the bot&apos;s commands</p>
           </Link>
           <Link href="/" className={styles.card}>
-            <h2>Return to Main Page &rarr;</h2>
+            <h2>Return to Main Page &larr;</h2>
             <p>Go back home</p>
           </Link>
         </div>

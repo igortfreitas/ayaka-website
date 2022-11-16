@@ -90,6 +90,8 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
   opacity: 60%;
+  height: 140px;
+  width: 230px;
 }
 
 .card:hover,

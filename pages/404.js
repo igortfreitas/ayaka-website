@@ -26,8 +26,8 @@ export default function Custom404() {
         </p>
         <div className={styles.grid}>
           <Link href="/" className={styles.card}>
-            <h2>Return to Main Page &rarr;</h2>
-            <p>Let&apos; go home.</p>
+            <h2>Return to Main Page &larr;</h2>
+            <p>Let&apos;s go home.</p>
           </Link>
         </div>
       </main>

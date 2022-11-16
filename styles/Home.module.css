@@ -81,7 +81,9 @@
   flex-wrap: wrap;
   max-width: 700px;
 }
-
+.cardTextDesc {
+  font-size: smaller;
+}
 .card {
   margin: 2rem;
   padding: 1.5rem;
@@ -99,6 +101,8 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
   opacity: 60%;
+  height: 140px;
+  width: 230px;
 }
 
 .card:hover,
