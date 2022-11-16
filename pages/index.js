@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          A bot based on miHoYo/HoYoverse's Genshin Impact character &apos;Kamisato Ayaka&apos;.
+          A bot based on miHoYo/HoYoverse&apos;s Genshin Impact character &apos;Kamisato Ayaka&apos;.
         </p>
         <p className={styles.description}>(actually had no name before...)</p>
         <div className={styles.grid}>
