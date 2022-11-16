@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Background from '../public/Ayaka.jpg'
+import Background from './Ayaka.jpg'
 import Head from 'next/head'
 export default function BackgroundImg() {
     return (
