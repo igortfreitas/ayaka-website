@@ -212,6 +212,22 @@ export default function Home() {
         <p>Usage:</p>
         <p className={styles.commandUsage}>/hutaovoiceline</p>
       </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/hug</p>
+        <p className={styles.commandDescription}>
+          Hug someone
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/hug user: [User ID/Tag]</p>
+      </div>
+       <div className={styles.acommand}>
+        <p className={styles.commandName}>/kiss</p>
+        <p className={styles.commandDescription}>
+          You know what this does... right?
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/kiss user: [User ID/Tag]</p>
+      </div>
       </main>
     </div>
   )
