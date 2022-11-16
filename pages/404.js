@@ -22,12 +22,12 @@ export default function Custom404() {
             Check for typos in the URL you typed in.
         </p>
         <p className={styles.et}>
-            You look a little lost, Traveler.
+            You look a little lost, Traveler..
         </p>
         <div className={styles.grid}>
           <Link href="/" className={styles.card}>
             <h2>Return to Main Page &rarr;</h2>
-            <p>Go back home</p>
+            <p>Let&apos; go home.</p>
           </Link>
         </div>
       </main>
