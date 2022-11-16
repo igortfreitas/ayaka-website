@@ -22,7 +22,7 @@ export default function Home() {
           Added commands -
         </p>
         <p className={styles.description}>
-           Add /say command. This command repeats what you type in.
+           Add /httpcat command. This command sends a random <a href="https://http.cat">http cat</a> image.
         </p>
         <div className={styles.grid}>
           <Link href="/" className={styles.card}>
