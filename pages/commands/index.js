@@ -230,6 +230,14 @@ export default function Home() {
         <p>Usage:</p>
         <p className={styles.commandUsage}>/kiss user: [User ID/Tag]</p>
       </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/httpcat</p>
+        <p className={styles.commandDescription}>
+          Sends a random photo of a cat (but as an HTTP error code) from <a href="https://http.cat">http.cat</a>
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/httpcat</p>
+      </div>
       </main>
     </div>
   )
