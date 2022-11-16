@@ -26,7 +26,7 @@ export default function Home() {
         </p>
         <div className={styles.grid}>
           <Link href="/" className={styles.card}>
-            <h2>Return to Main Page &rarr;</h2>
+            <h2>Return to Main Page &larr;</h2>
             <p>Go back home</p>
           </Link>
         </div>
