@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Background from '../public/Ayaka.jpg'
+import Head from 'next/head'
 export default function BackgroundImg() {
     return (
 <div style={{
