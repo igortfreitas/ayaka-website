@@ -142,3 +142,6 @@
     filter: invert(1);
   }
 }
+.et {
+  font-size: smaller;
+}

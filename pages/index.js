@@ -3,7 +3,9 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import Background from '../public/Ayaka.jpg'
+import { motion } from "framer-motion"
 export default function Home() {
+ 
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
         <h1 className={styles.title}>
           AyakaMB/MB
         </h1>
