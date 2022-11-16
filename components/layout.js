@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
     <Head>
-      <SetIcon />
+    <link rel="shortcut icon" href="../public/favicon.ico" />
     </Head>
       <Background />
       <main>{children}</main>

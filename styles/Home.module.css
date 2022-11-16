@@ -2,10 +2,10 @@
   padding: 0 2rem;
 }
 #bim {
-            zIndex: -1;
-            position: 'fixed';
-            width: '100vw';
-            height: '100vh';
+position: 'fixed';
+width: '100vw';
+height: '100vh';
+z-index: -1;
 }
 
 
