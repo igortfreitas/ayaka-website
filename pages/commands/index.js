@@ -237,6 +237,7 @@ export default function Home() {
         </p>
         <p>Usage:</p>
         <p className={styles.commandUsage}>/httpcat</p>
+        <p className={styles.commandOptionalUsage}>/httpcat search: [code]</p>
       </div>
       </main>
     </div>
