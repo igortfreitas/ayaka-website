@@ -10,8 +10,10 @@
     "export": "next export"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "@markdoc/markdoc": "^0.2.1",
     "@markdoc/next.js": "^0.2.1",
+    "axios": "^1.1.3",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.6.7",

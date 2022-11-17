@@ -1,0 +1,44 @@
+.bugDescriptionField {
+    height: 500px;
+    width: 700px;
+    font-size: larger;
+    text-align: center;
+    background-color: inherit;
+    opacity: 90%;
+    color: white;
+    border-style: solid;
+    border-color: white;
+  }
+
+.bugTitleField {
+    font-size: larger;
+    height: 30px;
+    width: 600px;
+    text-align: center;
+    background-color: inherit;
+    color: white;
+    opacity: 90%;
+    border-style: solid;
+    border-color: white;
+}
+.bugEmailField {
+  height: 50px;
+  width: 900px;
+  font-size: large;
+  background-color: inherit;
+  color: white;
+  opacity: 90%;
+  border-style: solid;
+  border-color: white;
+}
+.typeOfInfo {
+  font-size: xx-large;
+}
+.buttonSubmit {
+  height: 70px;
+  width: 600px;
+  font-size: xx-large;
+  background-color: inherit;
+  border-radius: 8px;
+  color: white
+}
