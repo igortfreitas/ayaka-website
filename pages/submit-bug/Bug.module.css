@@ -10,6 +10,17 @@
     border-color: white;
   }
 
+
+.bugImageField {
+  height: 50px;
+  width: 900px;
+  font-size: large;
+  background-color: inherit;
+  color: white;
+  opacity: 90%;
+  border-style: solid;
+  border-color: white;
+}
 .bugTitleField {
     font-size: larger;
     height: 30px;

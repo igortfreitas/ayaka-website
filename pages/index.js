@@ -50,6 +50,12 @@ export default function Home() {
             <p>A list of all the bot&apos;s commands</p>
            </div>
           </Link>
+          <Link href="./submit-bug/" className={styles.card}>
+          <div className={styles.cardText}> 
+            <h2>Submit bugs &rarr;</h2>
+            <p>Submit a bug report.</p>
+          </div>
+        </Link>
         </div>
       </main>
     </div>
