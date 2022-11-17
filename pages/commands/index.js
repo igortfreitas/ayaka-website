@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Link href='/'>&larr; Go back</Link>
+        <Link href='/' className={styles.ad}>&larr; Go back</Link>
         <h1 className={styles.title}>
           All commands
         </h1>

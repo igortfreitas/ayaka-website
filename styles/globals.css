@@ -7,11 +7,14 @@ body {
     color: white
 }
 
-a {
+.ad {
   color: #568dba;
   text-decoration: none;
 }
-
+a {
+  color: darkgrey;
+  text-decoration: none;
+}
 * {
   box-sizing: border-box;
 }
