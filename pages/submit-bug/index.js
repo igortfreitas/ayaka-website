@@ -39,7 +39,7 @@ export default function ContactForm() {
       .then(() => alert("Bug report sent."))
       .catch((err) =>
         alert(
-          "An error occured while trying to send the bug report. Try submitting it again."
+          "An error occured while trying to send the bug report. Try submitting it again.\nError: " + err
         )
       );
   }
