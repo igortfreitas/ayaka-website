@@ -20,6 +20,8 @@
   opacity: 90%;
   border-style: solid;
   border-color: white;
+  align-items: baseline;
+  text-align: center;
 }
 .bugTitleField {
     font-size: larger;

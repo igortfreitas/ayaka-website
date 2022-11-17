@@ -1,23 +1,44 @@
 import styles from "./Bug.module.css";
 import { useState } from "react";
-import FormData from "form-data";
 import axios from "axios";
 
 export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
+
   const [image, setImage] = useState("");
-  const reqwebhook =
-    "https://ptb.discord.com/api/webhooks/1042678742960582696/sdkHjmH99z7GgQ5ScgjKewrUMPnxPUHDRXzK2MMrJcfuJomST_wqu7KY3bSaqQ-2kDqo";
+  function convertToBase64(file) {
+    return new Promise((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(file);
+      fileReader.onload = () => {
+        resolve(fileReader.result);
+      };
+      fileReader.onerror = (error) => {
+        reject(error);
+      };
+    });
+  }
+  const handleImage = async (e) => {
+    const file = e.target.files[0];
+    const base64 = await convertToBase64(file);
+    // check if image exeed 1mb
+    if (base64.length > 950000) {
+      alert("Image size must be less than 1 megabyte.");
+      e.target.value = "";
+      return;
+    }
+    setImage(base64);
+  };
 
   function sendMessage() {
     axios
-      .post(reqwebhook, params)
+      .post("/api/bug", params)
       .then(() => alert("Bug report sent."))
       .catch((err) =>
         alert(
-          "An error occured while trying to send the bug report. Try submitting it again. Error:" + err
+          "An error occured while trying to send the bug report. Try submitting it again."
         )
       );
   }
@@ -32,35 +53,12 @@ export default function ContactForm() {
     }
   }
 
-  //   const params = {
-  //     username: "Ayaka - Bug submits",
-  //     avatar_url: "https://discord.ayakads.cf/Ayaka.jpg",
-  //     content:
-  //       "Message was sent\nSent at: <t:" +
-  //       Date.now().toString().slice(0, -3) +
-  //       ":R>\n\n\n**Title of bug**\n" +
-  //       title +
-  //       "\n**Bug description/message**\n" +
-  //       message +
-  //       "\n**Bug sender email**\n" +
-  //       email,
-  //   };
-
-  const params = new FormData();
-  params.append("username", "Ayaka - Bug submits");
-  params.append("avatar_url", "https://discord.ayakads.cf/Ayaka.jpg");
-  params.append(
-    "content",
-    "Message was sent\nSent at: <t:" +
-      Date.now().toString().slice(0, -3) +
-      ":R>\n\n\n**Title of bug**\n" +
-      title +
-      "\n**Bug description/message**\n" +
-      message +
-      "\n**Bug sender email**\n" +
-      email
-  );
-  params.append("file1", image);
+  const params = {
+    title: title,
+    email: email,
+    message: message,
+    attachment: image,
+  };
 
   return (
     <>
@@ -86,6 +84,7 @@ export default function ContactForm() {
         <input
           id="title"
           name="title"
+          required
           className={styles.bugTitleField}
           placeholder="Title of the bug. This is optional, and you can skip to the description."
           onChange={(e) => setTitle(e.target.value)}
@@ -110,7 +109,7 @@ export default function ContactForm() {
           id="image"
           accept="image/png, image/jpeg"
           className={styles.bugImageField}
-          onChange={(e) => setImage(e.target.files[0])}
+          onChange={handleImage}
         />
         <button type="submit" className={styles.buttonSubmit}>
           Submit bug &rarr;
