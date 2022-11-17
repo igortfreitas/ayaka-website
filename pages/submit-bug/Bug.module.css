@@ -1,5 +1,5 @@
 .bugDescriptionField {
-    height: 500px;
+    height: 300px;
     width: 700px;
     font-size: larger;
     text-align: center;
@@ -25,7 +25,7 @@
 }
 .bugTitleField {
     font-size: larger;
-    height: 30px;
+    height: 45px;
     width: 600px;
     text-align: center;
     background-color: inherit;
@@ -54,9 +54,10 @@
   font-size: xx-large;
   background-color: inherit;
   border-radius: 8px;
-  color: white
+  border-color: white;
+  color: white;
 }
-body {
+.main {
     text-align: center;
     align-items: center;
 }

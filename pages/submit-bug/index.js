@@ -61,6 +61,7 @@ export default function ContactForm() {
   };
 
   return (
+    <div className={styles.main}>
     <>
       <form id="forms" onSubmit={confirmSend}>
         <label htmlFor="email" className={styles.typeOfInfo} type="email">
@@ -117,5 +118,6 @@ export default function ContactForm() {
         </button>
       </form>
     </>
+  </div>
   );
 }
