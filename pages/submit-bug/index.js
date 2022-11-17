@@ -82,7 +82,7 @@ export default function ContactForm() {
           name="email"
           className={styles.bugEmailField}
           required
-          placeholder="Your email, so that you can give more information about the bug."
+          placeholder="Your email, so that you can give more information about the bug/so that we can reach out to you."
           onChange={(e) => setEmail(e.target.value)}
         />
         <p></p>
