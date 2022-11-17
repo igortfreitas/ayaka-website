@@ -85,7 +85,6 @@ export default function ContactForm() {
         <input
           id="title"
           name="title"
-          required
           className={styles.bugTitleField}
           placeholder="Title of the bug. This is optional, and you can skip to the description."
           onChange={(e) => setTitle(e.target.value)}
