@@ -1,6 +1,7 @@
 import styles from "./Bug.module.css";
 import { useState } from "react";
 import axios from "axios";
+import Head from 'next/head';
 
 export default function ContactForm() {
   const [message, setMessage] = useState("");
