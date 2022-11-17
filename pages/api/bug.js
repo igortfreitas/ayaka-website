@@ -13,10 +13,8 @@ export default function handler(req, res) {
       const formData = new FormData();
       formData.append("file", buffer, "attachment.png");
       formData.append(
-        "content",
-        `Title: ${title}
-Email: ${email}
-Message: ${message}`
+          "content",
+          `Bug report title:\n${title}\nBug report description:\n${message}\nEmail: ${email}`
       );
       axios
         .post(url, formData, {
@@ -33,9 +31,25 @@ Message: ${message}`
     } else {
       axios
         .post(url, {
-          content: `Title: ${title}
-Email: ${email}
-Message: ${message}`,
+          "embeds": [{
+            "fields": [
+              {
+                "name": "Bug title",
+                "value": title,
+                "inline": true
+              },
+              {
+                "name": "Bug reporter's email",
+                "value": email,
+                "inline": true
+              },
+              {
+                "name": "Bug desc",
+                "value": message
+              }
+            ],
+            "color": "14177041"
+          }]
         })
         .then((response) => {
           res.status(200).json({ success: true });

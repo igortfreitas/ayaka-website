@@ -111,6 +111,7 @@ export default function ContactForm() {
           className={styles.bugImageField}
           onChange={handleImage}
         />
+        <p />
         <button type="submit" className={styles.buttonSubmit}>
           Submit bug &rarr;
         </button>

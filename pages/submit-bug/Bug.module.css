@@ -12,15 +12,15 @@
 
 
 .bugImageField {
-  height: 50px;
-  width: 900px;
+  height: 39px;
+  width: 400px;
   font-size: large;
   background-color: inherit;
   color: white;
-  opacity: 90%;
   border-style: solid;
   border-color: white;
-  align-items: baseline;
+  border-radius: 12px;
+  align-items: center;
   text-align: center;
 }
 .bugTitleField {
@@ -33,6 +33,7 @@
     opacity: 90%;
     border-style: solid;
     border-color: white;
+    border-radius: 12px;
 }
 .bugEmailField {
   height: 50px;
