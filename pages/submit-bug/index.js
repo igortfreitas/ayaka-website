@@ -63,6 +63,7 @@ export default function ContactForm() {
 
   return (
     <>
+    <div className={styles.container}>
       <Head>
         <title>AyakaMB - Bug Report</title>
         <meta name="description" content="Report bugs here. Can be about this website or about the bot. You can also send random stuff here..." />
@@ -123,6 +124,7 @@ export default function ContactForm() {
           Submit bug &rarr;
         </button>
       </form>
+    </div>
     </div>
   </>
   );
