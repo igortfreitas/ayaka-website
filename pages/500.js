@@ -23,6 +23,7 @@ export default function Custom404() {
 
         <p className={styles.description}>
           The server has encountered an error.
+          Go to the <Link href="./submit-bug">bug reports page if the problem persists.</Link>
         </p>
         <div className={styles.grid}>
           <a onClick={refresh} className={styles.card}>

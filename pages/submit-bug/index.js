@@ -61,14 +61,14 @@ export default function ContactForm() {
   };
 
   return (
-    <Head>
+    <>
+      <Head>
         <title>AyakaMB - Bug Report</title>
         <meta name="description" content="Report bugs here. Can be about this website or about the bot. You can also send random stuff here..." />
         <meta name="theme-color" content="#5284d9" />
         <link rel="shortcut icon" href="../public/favicon.ico" />
       </Head>
     <div className={styles.main}>
-    <>
       <form id="forms" onSubmit={confirmSend}>
         <label htmlFor="email" className={styles.typeOfInfo} type="email">
           Email Address
@@ -122,7 +122,7 @@ export default function ContactForm() {
           Submit bug &rarr;
         </button>
       </form>
-    </>
-  </div>
+    </div>
+  </>
   );
 }
