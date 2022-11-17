@@ -56,3 +56,8 @@
   border-radius: 8px;
   color: white
 }
+html,
+body {
+    text-align: center;
+    align-items: center;
+}
