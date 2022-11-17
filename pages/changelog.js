@@ -19,10 +19,10 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Added commands -
+          Update command replies -
         </p>
         <p className={styles.description}>
-           Add /httpcat command. This command sends a random <a href="https://http.cat">http cat</a> image.
+           Change error reply, and change listall option reply (in /httpcat command)
         </p>
         <div className={styles.grid}>
           <Link href="/" className={styles.card}>
