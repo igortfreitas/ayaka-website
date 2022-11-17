@@ -82,7 +82,7 @@ export default function ContactForm() {
           name="email"
           className={styles.bugEmailField}
           required
-          placeholder="Your email, so that you can give more information about the bug/so that we can reach out to you."
+          placeholder="Your email. Please put in your REAL email, this is not required if you're not sending an actual bug report"
           onChange={(e) => setEmail(e.target.value)}
         />
         <p></p>
