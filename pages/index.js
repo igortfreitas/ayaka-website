@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Background from '../public/Ayaka.jpg'
 import { motion } from "framer-motion"
+import Script from 'next/script'
 export default function Home() {
  
   return (
@@ -53,7 +54,7 @@ export default function Home() {
           <Link href="./submit-bug/" className={styles.card}>
           <div className={styles.cardText}> 
             <h2>Submit bugs &rarr;</h2>
-            <p>Submit a bug report.</p>
+            <p>If you&apos;ve found a bug on the site/bot, report them here.</p>
           </div>
         </Link>
         </div>
