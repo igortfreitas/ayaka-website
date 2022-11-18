@@ -1,16 +1,36 @@
 .container {
-  text-align: center;
+  padding: 0 2rem;
+}
+#bim {
+position: 'fixed';
+width: '100vw';
+height: '100vh';
+z-index: -1;
 }
 
+
 .main {
-  flex-direction: column;
-  align-items: center;
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
 }
 
+#forms {
+  align-items: center;
+  text-align: center;
+  min-height: auto;
+  padding: 4rem 0;
+  padding-top: 4rem 0;
+  padding-bottom: 4rem 0;
+  padding-right: 4rem 0;
+  padding-left: 4rem 0;
+  margin: 7rem 0;
+}
 .footer {
   display: flex;
   flex: 1;
@@ -43,7 +63,9 @@
   line-height: 1.15;
   font-size: 4rem;
 }
-
+.cardText {
+   opacity: 100%
+}
 .title,
 .description {
   text-align: center;
@@ -71,7 +93,9 @@
   flex-wrap: wrap;
   max-width: 700px;
 }
-
+.cardTextDesc {
+  font-size: smaller;
+}
 .card {
   margin: 2rem;
   padding: 1.5rem;
@@ -89,6 +113,8 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
   opacity: 60%;
+  height: 140px;
+  width: 230px;
 }
 
 .card:hover,
@@ -141,27 +167,35 @@
     filter: invert(1);
   }
 }
-.et {
-  font-size: smaller;
-}
+
 /* bug report stuff */
 .bugDescriptionField {
     height: 300px;
-    width: 800px;
+    width: 600px;
     font-size: larger;
     text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 12px;
     background-color: inherit;
     opacity: 90%;
     color: white;
     border-style: solid;
     border-color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    background-color: #363b42;
+    border-width: 2px;
   }
 
 
 .bugImageField {
   height: 39px;
-  width: 400px;
+  width: 600px;
   font-size: large;
   background-color: inherit;
   color: white;
@@ -170,23 +204,38 @@
   border-radius: 12px;
   align-items: center;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  opacity: 90%;
+  background-color: #363b42;
 }
 .bugTitleField {
     font-size: larger;
     height: 45px;
     width: 600px;
     text-align: center;
-    background-color: inherit;
+    background-color: #363b42;
     color: white;
     opacity: 90%;
     border-style: solid;
     border-color: white;
     border-radius: 12px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
 }
 .bugEmailField {
-  height: 50px;
-  width: 900px;
+  height: 45px;
+  width: 600px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 12px;
   font-size: large;
   background-color: inherit;
   color: white;
@@ -194,15 +243,26 @@
   border-style: solid;
   border-color: white;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  background-color: #363b42;
 }
 .typeOfInfo {
   font-size: xx-large;
 }
 .buttonSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
   height: 70px;
   width: 600px;
   font-size: xx-large;
-  background-color: inherit;
+  background-color: #363b42;
   border-radius: 8px;
   border-color: white;
   color: white;

@@ -62,7 +62,6 @@ export default function ContactForm() {
   };
 
   return (
-    <>
     <div className={styles.container}>
       <Head>
         <title>AyakaMB - Bug Report</title>
@@ -70,7 +69,13 @@ export default function ContactForm() {
         <meta name="theme-color" content="#5284d9" />
         <link rel="shortcut icon" href="../public/favicon.ico" />
       </Head>
-    <div className={styles.main}>
+    <main className={styles.main}>
+      <div className={styles.grid}>
+      <>
+      <h1 className={styles.title}>AyakaMB bug report</h1>
+      <p className={styles.description}>
+        You may send bug reports here. Or you can send messages to us here. 
+      </p>
       <form id="forms" onSubmit={confirmSend}>
         <label htmlFor="email" className={styles.typeOfInfo} type="email">
           Email Address
@@ -82,7 +87,7 @@ export default function ContactForm() {
           name="email"
           className={styles.bugEmailField}
           required
-          placeholder="Your email. Please put in your REAL email, this is not required if you're not sending an actual bug report"
+          placeholder="Your email. Please put in your REAL email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <p></p>
@@ -121,11 +126,12 @@ export default function ContactForm() {
         />
         <p />
         <button type="submit" className={styles.buttonSubmit}>
-          Submit bug &rarr;
+          Submit bug report &rarr;
         </button>
       </form>
+      </> 
+      </div>
+    </main>
     </div>
-    </div>
-  </>
   );
 }
