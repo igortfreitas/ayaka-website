@@ -23,7 +23,7 @@ export default function Custom404() {
 
         <p className={styles.description}>
           The server has encountered an error.
-          Go to the <Link href="./submit-bug">bug reports page if the problem persists.</Link> Or, if you can&apos;t access the bug reports page, DM <a href="https://discord.com/users/716491639857872928">rrryfoo#8618</a>.
+          Go to the <Link href="./submit-bug">bug reports page if the problem persists.</Link> Or, if you can&apos;t access the bug reports page, Check the website on <a href="https://downforeveryoneorjustme.com/discord.ayakads.cf">"Down for everyone or just me"</a>
         </p>
         <div className={styles.grid}>
           <a onClick={refresh} className={styles.card}>
