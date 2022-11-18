@@ -14,7 +14,10 @@ export default function handler(req, res) {
       formData.append("file", buffer, "attachment.png");
       formData.append(
           "content",
-          `Bug report title:\n${title}\nBug report description:\n${message}\nEmail: ${email}`
+          `
+          **Bug report title**:\n${title}
+          \n\n**Email**: ${email}
+          \n\n**Bug report description**:\n${message}`
       );
       axios
         .post(url, formData, {
