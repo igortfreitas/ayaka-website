@@ -53,7 +53,7 @@ export default function Home() {
           <Link href="./submit-bug/" className={styles.card}>
           <div className={styles.cardText}> 
             <h2>Submit bugs &rarr;</h2>
-            <p>Submit a bug report.</p>
+            <p>Submit a bug report. Not recommended for portrait mobile users.</p>
           </div>
         </Link>
         </div>

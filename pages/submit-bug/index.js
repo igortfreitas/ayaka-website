@@ -2,7 +2,7 @@ import styles from "./Bug.module.css";
 import { useState } from "react";
 import axios from "axios";
 import Head from 'next/head';
-
+import Link from "next/link";
 export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
@@ -128,6 +128,8 @@ export default function ContactForm() {
         <button type="submit" className={styles.buttonSubmit}>
           Submit bug report &rarr;
         </button>
+        <p></p>
+        <Link href="../">Go back to main page &larr;</Link>
       </form>
       </> 
       </div>
