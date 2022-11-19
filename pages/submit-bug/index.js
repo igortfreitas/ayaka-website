@@ -1,5 +1,5 @@
 import styles from "./Bug.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import axios from "axios";
 import Head from 'next/head';
 import Link from "next/link";
@@ -7,6 +7,8 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
+
+  const formRef = useRef(null);
 
   const [image, setImage] = useState("");
   function convertToBase64(file) {
@@ -34,23 +36,30 @@ export default function ContactForm() {
   };
 
   async function sendMessage() {
-    const res = await axios.post("/api/bug", params)
-      .then(() => {
-        if (res.status === 200) {
-          alert("Bug report sent successfully!");
-          setMessage("");
-          setEmail("");
-          setTitle("");
-          setImage("");
-        } else {
-          alert("Something went wrong, please try again later.");
-        }
-      })
-      .catch((err) =>
-        alert(
-          "An error occured while trying to send the bug report. Try submitting it again.\nError: " + err
-        )
+
+    const params = {
+      title: title,
+      email: email,
+      message: message,
+      attachment: image,
+    };
+
+    try {
+      const res = await axios.post("/api/bug", params)
+      if (res.status === 200) {
+        alert("Bug report sent successfully!");
+        setMessage("");
+        setEmail("");
+        setTitle("");
+        formRef.current.value = null;
+      } else {
+        alert("Something went wrong, please try again later.");
+      }
+    } catch (error) {
+      alert(
+        "An error occured while trying to send the bug report. Try submitting it again.\nError: " + error
       );
+    }
   }
   function confirmSend(e) {
     e.preventDefault();
@@ -62,13 +71,6 @@ export default function ContactForm() {
       alert("Canceled bug submit.");
     }
   }
-
-  const params = {
-    title: title,
-    email: email,
-    message: message,
-    attachment: image,
-  };
 
   return (
     <div className={styles.container}>
@@ -98,6 +100,7 @@ export default function ContactForm() {
           required
           placeholder="Your email. Please put in your REAL email"
           onChange={(e) => setEmail(e.target.value)}
+          value={email}
         />
         <p></p>
         <label htmlFor="title" className={styles.typeOfInfo}>
@@ -110,6 +113,7 @@ export default function ContactForm() {
           className={styles.bugTitleField}
           placeholder="Title of the bug. This is required."
           onChange={(e) => setTitle(e.target.value)}
+          value={title}
         />
         <p></p>
         <label htmlFor="text" className={styles.typeOfInfo}>
@@ -123,6 +127,7 @@ export default function ContactForm() {
           required
           placeholder="Description of the bug. This is where you explain the bug."
           onChange={(e) => setMessage(e.target.value)}
+          value={message}
         ></textarea>
         <br />
         <input
@@ -132,6 +137,7 @@ export default function ContactForm() {
           accept="image/png, image/jpeg"
           className={styles.bugImageField}
           onChange={handleImage}
+          ref={formRef}
         />
         <p />
         <button type="submit" className={styles.buttonSubmit}>
