@@ -237,7 +237,15 @@ export default function Home() {
         </p>
         <p>Usage:</p>
         <p className={styles.commandUsage}>/httpcat</p>
-        <p className={styles.commandOptionalUsage}>/httpcat search: [code]</p>
+        <p className={styles.commandOptionalUsage}>/httpcat search: [code] / /httpcat listall: true (any other text given here will give normal httpcat image)</p>
+      </div>
+      <div className={styles.acommand}>
+        <p className={styles.commandName}>/bugreport</p>
+        <p className={styles.commandDescription}>
+          This command replaces the [bug report page](https://discord.ayakads.cf/submit-bug). It is for phone users.
+        </p>
+        <p>Usage:</p>
+        <p className={styles.commandUsage}>/bugreport bugtitle: [bug title] bugdesc: [describe bug]</p>
       </div>
       </main>
     </div>
