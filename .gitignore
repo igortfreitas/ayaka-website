@@ -35,4 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 # hide api
-/pages/api
+/pages/api/bug.js
