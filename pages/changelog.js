@@ -19,10 +19,10 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Update command replies -
+          New commands -
         </p>
         <p className={styles.description}>
-           Change error reply, and change listall option reply (in /httpcat command)
+          Add /bugreport command. This command is for phone users.
         </p>
         <div className={styles.grid}>
           <Link href="/" className={styles.card}>
