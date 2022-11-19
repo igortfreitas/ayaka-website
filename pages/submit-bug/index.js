@@ -33,8 +33,8 @@ export default function ContactForm() {
     setImage(base64);
   };
 
-  function sendMessage() {
-    axios
+  async function sendMessage() {
+    const res = await axios
       .post("/api/bug", params)
       .then(() => alert("Bug report sent."))
       .catch((err) =>
@@ -42,7 +42,7 @@ export default function ContactForm() {
           "An error occured while trying to send the bug report. Try submitting it again.\nError: " + err
         )
       );
-     (if res.status === 200) {
+     if (res.status === 200) {
         setEmail('');
         setTitle('');
         setMessage('');

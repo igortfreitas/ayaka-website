@@ -4,7 +4,7 @@ const axios = require("axios");
 const FormData = require("form-data");
 const url = process.env.bugurl;
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === "POST") {
     const { title, email, message, attachment } = req.body;
     if (attachment) {
@@ -18,7 +18,7 @@ export default function handler(req, res) {
           \n\n**Email**: ${email}
           \n\n**Bug report description**:\n${message}`
       );
-      axios
+      await axios
         .post(url, formData, {
           headers: {
             "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
@@ -31,7 +31,7 @@ export default function handler(req, res) {
           res.status(500).json({ error: error.message });
         });
     } else {
-      axios
+      await axios
         .post(url, {
           "embeds": [{
             "fields": [
