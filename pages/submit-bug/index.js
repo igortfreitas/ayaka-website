@@ -37,16 +37,16 @@ export default function ContactForm() {
     axios
       .post("/api/bug", params)
       .then(() => alert("Bug report sent."))
-      (if res.status === 200) {
-        setEmail('');
-        setTitle('');
-        setMessage('');
-    }
       .catch((err) =>
         alert(
           "An error occured while trying to send the bug report. Try submitting it again.\nError: " + err
         )
       );
+     (if res.status === 200) {
+        setEmail('');
+        setTitle('');
+        setMessage('');
+    }
   }
   function confirmSend(e) {
     e.preventDefault();
