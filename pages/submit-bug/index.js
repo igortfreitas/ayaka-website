@@ -34,19 +34,23 @@ export default function ContactForm() {
   };
 
   async function sendMessage() {
-    const res = await axios
-      .post("/api/bug", params)
-      .then(() => alert("Bug report sent."))
+    const res = await axios.post("/api/bug", params)
+      .then(() => {
+        if (res.status === 200) {
+          alert("Bug report sent successfully!");
+          setMessage("");
+          setEmail("");
+          setTitle("");
+          setImage("");
+        } else {
+          alert("Something went wrong, please try again later.");
+        }
+      })
       .catch((err) =>
         alert(
           "An error occured while trying to send the bug report. Try submitting it again.\nError: " + err
         )
       );
-     if (res.status === 200) {
-        setEmail('');
-        setTitle('');
-        setMessage('');
-    }
   }
   function confirmSend(e) {
     e.preventDefault();
