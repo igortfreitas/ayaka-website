@@ -2,8 +2,7 @@ const axios = require("axios");
 
 // npm install form-data
 const FormData = require("form-data");
-const url =
-  "https://ptb.discord.com/api/webhooks/1042678742960582696/sdkHjmH99z7GgQ5ScgjKewrUMPnxPUHDRXzK2MMrJcfuJomST_wqu7KY3bSaqQ-2kDqo";
+const url = process.env.bugurl;
 
 export default function handler(req, res) {
   if (req.method === "POST") {
